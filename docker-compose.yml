@@ -29,6 +29,10 @@ services:
       - backend-net
     ports:
       - 3000:3000
+    # Add this line to make the service accessible from outside
+    expose:
+      - 3000
 
 networks:
   backend-net:
+
